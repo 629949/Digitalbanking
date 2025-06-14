@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Card({text1, image, text2, text3, link, height, width, flexDirection, display, border, imageClass, text1Class, text2Class, text3Class   }) {
+export default function Card({text1, image, text2, text3, link, height, width, flexDirection, display, border, imageClass, text1Class, text2Class, text3Class , cardClass  }) {
 
 const design = {
     height : height,
@@ -15,7 +15,7 @@ const images = {
 }
 
   return (
-    <div style={design} className=' flex flex-col '>
+    <div  className={cardClass}>
    <img src= {image} alt="" className={imageClass}/>
    <p className={text1Class}>{text1}</p> 
     <p  className={text2Class}>{text2}</p>

@@ -21,7 +21,7 @@ import mockups from '../images/image-mockups.png'
 
 function Home() {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-evenly '>
     <Nav />
     <div className='flex justify-between '>
         <Card 
@@ -47,60 +47,78 @@ function Home() {
         
     </div>
 
-    <div className='w-screen h-96  flex flex-col justify-around'>
-        <h3>Why choose Easybank?</h3>
-        <p>We leverage open Banking to turn your bank account into your financial hub. Control your finance like never before</p>
+    <div className='w-screen h-[800px] m-20    flex flex-col justify-around items-center'>
+        <h3 className='border w-full m-10 text-4xl'>Why choose Easybank?</h3>
+        <p className='w-full m-10'>We leverage open Banking to turn your bank account into your financial hub. Control your finance like never before</p>
 
         <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2 place-items-center ">
            <Card 
          
-           width={'250px'}
-           height={'250px'}
-            imageClass="rounded-lg w-20 h-20 object-cover"
+           cardClass={' flex flex-col items-start border h-90'}
+            imageClass="rounded-lg w-20 h-20 object-cover m-5 "
             flexDirection={'column'}
            image={online}
+           
            text1={'Online Banking'}
-           text2={'Our mordern web and mobile applications allow you to keep track of your finances wherever you are in the world.'}/>
+           text1Class={'font-bold m-5 text-2xl mb-0  w-full'}
+           text2={'Our mordern web and mobile applications allow you to keep track of your finances wherever you are in the world.'}
+           text2Class={'m-5 w-60  '}
+           
+           />
 
 
 
            <Card 
-            
-            width={'250px'}
-            height={'250px'}
+            cardClass={' flex flex-col items-center justify-center h-90 '}
+         
             imageClass="rounded-lg w-20 h-20 object-cover"
+       
+
 
            image={budgeting}
            text1={'Simple Budgeting'}
+           text1Class={'font-bold mb-0 text-2xl'}
+           text2Class={'m-5 w-60'}
+
            text2={'See exactly where your money goes eac month. Recieve notifications when youre close to hitting your limits'}/>
 
 
            <Card 
           
-            width={'250px'}
-            height={'250px'}
+       
             imageClass="rounded-lg w-20 h-20 object-cover"
+            cardClass={' flex flex-col items-center justify-center h-90 '}
+
 
            image={onboarding}
            text1={'Fast Onbording'}
            text2={'We dont do branches. Open your account in minutes online and start taking control of your finances right away.'}
+
+           text1Class={'font-bold m-5 text-2xl'}
+           text2Class={'m-5 w-56'}
+
            />
 
 
            <Card
            
-            width={'250px'}
-            height={'250px'}
+           
             imageClass="rounded-lg w-20 h-20 object-cover"
+            cardClass={' flex flex-col items-center justify-center h-90 '}
+
 
            image={api}
            text1={'Open API'}
            text2={'Manage your savings, investments, pension and so much more from one account. Tracking your money has never been easier'}
+
+           text1Class={'font-bold m-5 text-2xl'}
+           text2Class={'m-5 w-56'}
+
            /> 
         </div>
     </div>
 
-<div>
+<div className='border h-[500px]'>
     <h3 className=' text-4xl m-10'>Latest Articles</h3>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -119,6 +137,10 @@ function Home() {
         <Card
         image={restaurant}
         imageClass={'h-50 w-86 rounded '}
+        border={'1px solid'}
+        display={'flex'}
+        flexDirection={'column'}
+
 
         text1={'By Wilson Hutton'}
         text1Class={'font-thin text-sm'}
