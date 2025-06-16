@@ -21,7 +21,7 @@ import mockups from '../images/image-mockups.png'
 
 function Home() {
   return (
-    <div className='flex flex-col items-center justify-evenly '>
+    <div className='flex flex-col items-center justify-evenly font-sans  '>
     <Nav />
     <div className='flex justify-between '>
         <Card 
@@ -48,8 +48,8 @@ function Home() {
     </div>
 
     <div className='w-screen h-[800px] m-20    flex flex-col justify-around items-center'>
-        <h3 className='border w-full m-10 text-4xl'>Why choose Easybank?</h3>
-        <p className='w-full m-10'>We leverage open Banking to turn your bank account into your financial hub. Control your finance like never before</p>
+        <h3 className=' w-[80%] m-10 text-[40px]'>Why choose Easybank?</h3>
+        <p className='w-full m-10 border '>We leverage open Banking to turn your bank account into your financial hub. Control your finance like never before</p>
 
         <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2 place-items-center ">
            <Card 
@@ -118,54 +118,83 @@ function Home() {
         </div>
     </div>
 
-<div className='border h-[500px]'>
+<div className=' h-[650px] w-[90%]'>
     <h3 className=' text-4xl m-10'>Latest Articles</h3>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <Card 
+    <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4  place-items-center  ">
+        <Card
         
-
         image={currencyImage}
-        text1Class={'font-thin text-sm'}
-        imageClass={'h-50 w-86 rounded '}
         text1={'By Claire Robinson'}
         link={'Recieve money in any currency with no fees'}
         text2={'The World is getting smaller and we are becoming more mobile. So why should you be forced to only recieve money in a single'}
+        
+
+
+
+
+        cardClass={'flex  flex-col items-center  m-5'}
+        text1Class={'font-thin text-sm w-[60%] mt-10 mb-2'}
+        text2Class={'m-2 w-56 w-[60%] mb-0 text-base-sm/6 font-light  text-gray-700 '}
+        imageClass={'h-50 w-60 rounded w-[80%] '}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[60%] mb-2 text-[19px]'}
+        
+
+
         />
 
 
         <Card
-        image={restaurant}
-        imageClass={'h-50 w-86 rounded '}
-        border={'1px solid'}
-        display={'flex'}
-        flexDirection={'column'}
+        
 
+        cardClass={'flex  flex-col items-center  m-5'}
+        text1Class={'font-thin text-sm w-[60%] mt-10 mb-2'}
+        text2Class={'m-2 w-56 w-[60%] mb-0 text-base-sm/6 font-light  text-gray-700 '}
+        imageClass={'h-50 w-60 rounded w-[80%] '}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[60%] mb-2 text-[19px]'}
 
         text1={'By Wilson Hutton'}
-        text1Class={'font-thin text-sm'}
+        image={restaurant}
         link={'Treat yourself without worrying about money'}
         text2={'Our simple budgeting feature allows you to separate out your spending and set realistic limits each month.'}
         />
 
         <Card 
         image={plane}
-        imageClass={'h-50 w-86 rounded '}
-
         text1={'By Wilson Hutton'}
-        text1Class={'font-thin text-sm'}
-        link={'Take your Easybank card wherever you go '}
         text2={'We want you to enjoy your travels. This is why we dont charge any fees on purchaes while your are abroad. Well even show you'}
+        link={'Take your Easybank card wherever you go '}
+
+
+
+
+
+
+        cardClass={'flex  flex-col items-center  m-5'}
+        text1Class={'font-thin text-sm w-[60%] mt-10 mb-2'}
+        text2Class={'m-2 w-56 w-[60%] mb-0 text-base-sm/6 font-light  text-gray-700 '}
+        imageClass={'h-50 w-60 rounded w-[80%] '}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[60%] mb-2 text-[19px]'}
         />
 
         <Card
         image={confetti}
-        imageClass={'h-50 w-86 rounded '}
-
         text1={'By Claire Robinson'}
-        text1Class={'font-thin text-sm'}
+        
         link={'Our invite-only Beta accounts are now live!'}
         text2={'After a lot of hard work by the whole team.we are excited to launch our closed beta. it is easy to request an invite through the site'}
+
+
+
+       
+
+        cardClass={'flex  flex-col items-center  m-5'}
+        text1Class={'font-thin text-sm w-[60%] mt-10 mb-2'}
+        text2Class={'m-2 w-56 w-[60%] mb-0 text-base-sm/6 font-light  text-gray-700 '}
+        imageClass={'h-50 w-60 rounded w-[80%] '}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[60%] mb-2 text-[19px]'}
+
+       
         />
     </div>
 </div>

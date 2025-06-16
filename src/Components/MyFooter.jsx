@@ -14,7 +14,7 @@ export default function MyFooter() {
                 <Link  className='hover:bg-green-400'><img src="src\images\icon-twitter.svg" alt="" /></Link>
                 <Link  className='hover:bg-green-400'><img 
                  className='hover:bg-green-400' src="src\images\icon-pinterest.svg" alt="" /></Link>
-                <Link  className='hover:text-green-400' ><img src="src\images\icon-instagram.svg" alt="" /></Link>
+                <Link  className='hover:text-green-400 ' ><img src="src\images\icon-instagram.svg" alt="" /></Link>
             </ul>
         </div>
         </div>
