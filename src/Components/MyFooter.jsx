@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function MyFooter() {
   return (
-    <div className='w-screen h-96 border bg-blue-950 flex justify-evenly items-center'>
+    <div className='w-screen h-72 border bg-blue-950 flex justify-evenly items-center'>
         <div>
         <img src="src\images\logo.svg" alt="" />
 
@@ -31,7 +31,9 @@ export default function MyFooter() {
         </div>
 
         <div className='text-white'>
-            <Link >Request Invite</Link>
+        <button class="bg-gradient-to-r from-green-400 to-blue-400 text-white font-semibold px-6 py-2 rounded-full shadow-md hover:from-green-500 hover:to-blue-500 transition duration-300 h-[50px] w-[200px]">
+  Request Invite
+</button>
             <p>@Easybank. All Rights Reserved</p>
         </div>
     </div>
