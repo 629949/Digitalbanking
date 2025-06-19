@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 export default function MyFooter() {
   return (
-    <div className='w-screen h-72 border bg-blue-950 flex justify-evenly items-center'>
-        <div>
+    <div className='w-[100%] lg:h-72  bg-blue-950 flex flex-col justify-evenly items-center h-[500px] md:h-[450px] lg:flex-row '>
+        <div className='flex flex-col gap-5'>
         <img src="src\images\logo.svg" alt="" />
 
         <div className="">
@@ -20,7 +20,7 @@ export default function MyFooter() {
         </div>
 
         <div className='text-white'>
-            <ul className='grid grid-cols-2 '>
+            <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 '>
                 <Link className='hover:text-green-600'>About us </Link>
                 <Link className='hover:text-green-600'>Careers </Link>
                 <Link className='hover:text-green-600'>Contact </Link>
