@@ -172,7 +172,7 @@ function Home() {
         text1Class={'font-normal text-gray-400 text-sm w-[65%] mt-10 mb-2'}
         text2Class={'m-2 w-[65%] mb-0 text-base/6 font-normal text-gray-400 mt-0 '}
         imageClass={'h-50 w-60 rounded w-[80%] '}
-        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[68%] mb-0 text-[19px]  text-base/6'}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[68%] mb-0 text-[19px]  text-base/6 lg:w-[80%]'}
         
 
 
@@ -197,7 +197,7 @@ function Home() {
         text1Class={'font-normal text-gray-400 text-sm w-[65%] mt-10 mb-2'}
         text2Class={'m-2  w-[65%] mb-0 text-base/6 font-normal text-gray-400 mt-0 '}
         imageClass={'h-50 w-60 rounded w-[80%] '}
-        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6'}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6 lg:w-[76%]'}
         
 
         />
@@ -215,7 +215,7 @@ function Home() {
         text1Class={'font-normal text-gray-400 text-sm w-[65%] mt-10 mb-2'}
         text2Class={'m-2  w-[65%] mb-0 text-base/6 font-normal text-gray-400 mt-0 '}
         imageClass={'h-50 w-60 rounded w-[80%] '}
-        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6'}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6 lg:w-[76%]'}
         
 
 
