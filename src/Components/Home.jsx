@@ -14,6 +14,7 @@ import api from '../images/icon-api.svg';
 import budgeting from '../images/icon-budgeting.svg';
 import bgIntro from '../images/bg-intro-desktop.svg';
 import mockups from '../images/image-mockups.png'
+import bgMobile from '../images/bg-intro-mobile.svg';
 
 
 
@@ -27,12 +28,14 @@ function Home() {
     <Nav />
 
 
-   <div className="flex flex-col-reverse lg:flex-row justify-around items-start w-screen p-4 border-orange-500">
+   <div className="flex flex-col-reverse lg:flex-row justify-center items-start w-screen p-4 border-orange-500">
 
   {/* Left Side - Text Section */}
-  <div className="flex flex-col lg:justify-start justify-center w-[90%] lg:items-start   items-center lg:w-1/2  lg:p-4  lg:h-[400px]  h-[300px] md:justify-center md:items-center  ">
+  <div className="flex flex-col lg:justify-start justify-center w-[90%] lg:items-start   items-center lg:w-[450px] lg:m-0  lg:p-4  lg:h-[400px]  h-[300px] md:justify-center md:items-center  ">
+
+
     <Card 
-      cardClass="lg:w-[60%] lg:flex- lg:flex-col lg:items-center lg:justify-start w-screen sm:items-center sm:justify-center border"
+      cardClass="lg:w-[60%] lg:flex- lg:flex-col lg:items-center lg:justify-start w-screen sm:items-center sm:justify-center "
       text1Class="  font-light lg:w-[80%] text-3xl sm:text-3xl md:text-4xl leading-tight m-1"
       text2Class="font-normal text-gray-400 m-1 mt-4 text-sm sm:text-base"
 
@@ -48,9 +51,13 @@ function Home() {
   </div>
 
   {/* Right Side - Image Section */}
-  <div className="relative w-full lg:w-1/2 flex justify-center items-center">
-    <img src={bgIntro} alt="Background design" className="absolute w-[60%] sm:w-[70%]" />
-    <img src={mockups} alt="Mockups" className="relative w-[80%] sm:w-[90%]" />
+  <div className="relative w-full lg:w-1/2 flex justify-center items-center ">
+
+    <img src={bgIntro} alt="Background design" className="absolute lg:w-[100%] w-[70%] hidden lg:block lg:top-0 lg:h-[100%]  " />
+
+
+    <img src={bgMobile} alt="" className='absolute top-0 w-full lg:hidden ' />
+    <img src={mockups} alt="Mockups" className="relative lg:w-[80%] w-[90%] lg:mb-[20px]" />
 
   </div>
 
@@ -165,7 +172,7 @@ function Home() {
         text1Class={'font-normal text-gray-400 text-sm w-[65%] mt-10 mb-2'}
         text2Class={'m-2 w-[65%] mb-0 text-base/6 font-normal text-gray-400 mt-0 '}
         imageClass={'h-50 w-60 rounded w-[80%] '}
-        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[68%] mb-0 text-[19px]  text-base/6'}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[68%] mb-0 text-[19px]  text-base/6 lg:w-[80%]'}
         
 
 
@@ -190,7 +197,7 @@ function Home() {
         text1Class={'font-normal text-gray-400 text-sm w-[65%] mt-10 mb-2'}
         text2Class={'m-2  w-[65%] mb-0 text-base/6 font-normal text-gray-400 mt-0 '}
         imageClass={'h-50 w-60 rounded w-[80%] '}
-        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6'}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6 lg:w-[76%]'}
         
 
         />
@@ -208,7 +215,7 @@ function Home() {
         text1Class={'font-normal text-gray-400 text-sm w-[65%] mt-10 mb-2'}
         text2Class={'m-2  w-[65%] mb-0 text-base/6 font-normal text-gray-400 mt-0 '}
         imageClass={'h-50 w-60 rounded w-[80%] '}
-        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6'}
+        linkClass={'hover:text-[#2dd2ce]  font-semibold lineSpacing-1  h-[50px] w-[65%] mb-0 text-[19px]  text-base/6 lg:w-[76%]'}
         
 
 
